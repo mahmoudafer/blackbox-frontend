@@ -22,7 +22,7 @@ const Home = props => {
             .then(res => {
                 console.log(res)
                 if (res.status === 200) {
-                    window.history.replaceState("", "", `https://backend-fjkv.onrender.com/meet/${meetingId}`)
+                    window.history.replaceState("", "", `https://blackbox-frontend.onrender.com/meet/${meetingId}`)
                     setParentMeetingId(meetingId)
                 }
             })
@@ -41,7 +41,7 @@ const Home = props => {
                 }
             }
         ).then(res => {
-            window.history.replaceState("", "", `https://backend-fjkv.onrender.com/meet/${res.data?.id}`)
+            window.history.replaceState("", "", `https://blackbox-frontend.onrender.com/meet/${res.data?.id}`)
             setParentMeetingId(res.data?.id)
         })
             .catch(err => alert(err))

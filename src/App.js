@@ -14,9 +14,9 @@ const App = () => {
     setMeetingId(id)
 
   const myPeerRef = useRef(new Peer({
-    host: 'https://backend-fjkv.onrender.com',
+    host: 'backend-fjkv.onrender.com',
     path: 'peer',
-    port: '3001'
+    port: '443'
   }))
   myPeerRef.current.on('open', con => {
     setMyPeer(myPeerRef.current)
