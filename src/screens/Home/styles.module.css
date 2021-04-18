@@ -1,0 +1,46 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 70vh;
+}
+
+.title {
+    font-size: 2em;
+}
+
+.input {
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    padding: .5rem;
+    color: #666;
+    box-shadow: inset 0 0 0.25rem #ddd;
+    margin: 0.5rem;
+}
+
+.input:focus {
+    border: 1px solid #d0d0d0;
+    box-shadow: inset 0 0 0.5rem #d0d0d0;
+}
+
+.joinBtn {
+    color: gray;
+    box-shadow: none;
+    border: none;
+    padding: .5rem;
+    background-color: white;
+}
+
+.joinBtn:hover {
+    background-color: white;
+}
+
+.activeBlue {
+    color: #1755c4;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+}
